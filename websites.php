@@ -1,6 +1,6 @@
 <?php
-    $keyWord  = null;
-    // TODO: read $keyWord
+    $keyWord  = (isset($_GET['key']) ? $_GET['key'] : null);
+    echo $keyWord;
     $keyWord = $keyWord->toURL = function() {
         // TODO: URL encoding
     };
