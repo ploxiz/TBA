@@ -2,11 +2,18 @@ var keyWord = null;
 
 function getKey() {
     keyWord = document.getElementById("key").value;
+
+    document.getElementById("results").innerHTML = httpGet("http://en.wikipedia.org/w/api.php?" +
+        "format=json&action=query&list=search&srsearch=" +
+        keyWord.replace(" ", "+") +
+        "&srprop"); // testing purposes
+
+    // document.getElementById("results").innerHTML = wikipedia.getResults();
 }
 
-function httpGet(theUrl) {
+function httpGet(Url) {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", theUrl, true);
+    xmlHttp.open("GET", Url, true);
     xmlHttp.send();
     return xmlHttp.responseText;
 }
@@ -48,5 +55,3 @@ var facebook = {
     name : "Facebook",
     address : "http://facebook.com/"
 };
-
-document.getElementById("results").innerHTML = wikipedia.getResults();
