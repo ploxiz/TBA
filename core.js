@@ -7,6 +7,7 @@ function getKey() {
         "format=json&action=query&list=search&srsearch=" +
         keyWord.replace(" ", "+") +
         "&srprop"); // testing purposes
+        // test
 
     // document.getElementById("results").innerHTML = wikipedia.getResults();
 }
