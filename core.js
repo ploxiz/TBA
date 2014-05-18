@@ -8,8 +8,6 @@ function getKey() {
         keyWord.replace(" ", "+") +
         "&srprop"); // testing purposes
 
-        //test
-
     // document.getElementById("results").innerHTML = wikipedia.getResults();
 }
 
