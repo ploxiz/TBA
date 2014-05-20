@@ -17,9 +17,7 @@ $(document).ready(function() {
         callWikipediaAPI : function(page) {
             $.getJSON("http://en.wikipedia.org/w/api.php?action=parse&format=json&callback=?", {
                 page: page,
-                prop: text,
-                redirects: false, // handles redirects
-                section: 1
+                redirects: false
             }).done(function(data, textStatus) {
                 $("#results").html(textStatus + "<br />")
                              .append(toFinalForm(data));
@@ -40,7 +38,8 @@ $(document).ready(function() {
     // Wikipedia functions.
     function toFinalForm(data) {
         // TODO: Sterge tot astfel incat sa ramana doar primul paragraf.
-
+        if (data==null) return 0;
+        else return 1;
 
     }
 
