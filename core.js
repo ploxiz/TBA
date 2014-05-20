@@ -19,8 +19,10 @@ $(document).ready(function() {
                 page: page,
                 redirects: false
             }).done(function(data, textStatus) {
-                $("#results").html(textStatus + "<br />")
-                             .append(toFinalForm(data));
+                var readData = $('<div>' + data.parse.text["*"] + '</div>');
+                if (data=!null)$("#results").html(readData);
+                else $("#results").html(0 );
+                             //.append(toFinalForm(data));
             })
         }
     };
