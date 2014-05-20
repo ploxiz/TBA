@@ -21,6 +21,7 @@ $(document).ready(function() {
             }).done(function(data, textStatus) {
                 var readData = $('<div>' + data.parse.text["*"] + '</div>');
                 if (data=!null)$("#results").html(readData);
+
                 else $("#results").html(0 );
                              //.append(toFinalForm(data));
             })
