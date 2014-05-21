@@ -17,12 +17,21 @@ $(document).ready(function() {
         callWikipediaAPI : function(page) {
             $.getJSON("http://en.wikipedia.org/w/api.php?action=parse&format=json&callback=?", {
                 page: page,
+                prop:"text",
                 redirects: false
             }).done(function(data, textStatus) {
                 var readData = $('<div>' + data.parse.text["*"] + '</div>');
-                if (data=!null)$("#results").html(readData);
 
-                else $("#results").html(0 );
+                 var redirect = readData.find('li:contains("REDIRECT") a').text();
+                    if(redirect != '') {
+                    	callWikipediaAPI(redirect);
+                        return;
+                    }
+                 var bar = readData.find("p:first");
+
+                if (data=!null)$("#results").html(bar);
+
+
                              //.append(toFinalForm(data));
             })
         }
