@@ -19,21 +19,10 @@ $(document).ready(function() {
                 page: page,
                 prop:"text",
                 redirects: false
-            }).done(function(data, textStatus) {
-                var readData = $('<div>' + data.parse.text["*"] + '</div>');
-
-                 var redirect = readData.find('li:contains("REDIRECT") a').text();
-                    if(redirect != '') {
-                    	callWikipediaAPI(redirect);
-                        return;
-                    }
-
-                 var bar = readData.find("p:first");
-
-                if (data=!null)$("#results").html(bar);
-
-
-                             //.append(toFinalForm(data));
+            }).done(function(data) {
+                var readData = $("<div>" + data.parse.text["*"] + "</div>");
+                var paragraph = readData.find("p:first");
+                $("#wiki_content").html(paragraph);
             })
         }
     };
@@ -47,17 +36,5 @@ $(document).ready(function() {
         name: "Facebook",
         address: "http://facebook.com/"
     };
-
-    // Wikipedia functions.
-    function toFinalForm(data) {
-        // TODO: Sterge tot astfel incat sa ramana doar primul paragraf.
-        if (data==null) return 0;
-        else return 1;
-
-    }
-
-    // Twitter functions
-
-    // Facebook functions
 
 });
