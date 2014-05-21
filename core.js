@@ -3,11 +3,8 @@ $(document).ready(function() {
     var keyWord = null;
 
     $("#submit").click(function() { // basically the 'main' function.
-
         keyWord = $("#key").val();
-
         wikipedia.callWikipediaAPI(keyWord.replace(" ", "_"));
-
     });
 
     var wikipedia = {
