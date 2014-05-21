@@ -27,6 +27,7 @@ $(document).ready(function() {
                     	callWikipediaAPI(redirect);
                         return;
                     }
+
                  var bar = readData.find("p:first");
 
                 if (data=!null)$("#results").html(bar);
