@@ -1,3 +1,4 @@
+/* (c) 2014 https://github.com/ploxiz/TBD */
 body {
     background-color: #b7c0c7;
 }
@@ -17,7 +18,7 @@ body {
     left: -50px;
     color: #b7c0c7;
     font-size: 85px;
-    font-family: Tahoma, Arial;
+    font-family: Tahoma, Arial, serif;
 }
 
 #search-bar {
@@ -65,7 +66,60 @@ body {
     background-image: url("pics/submit-button-active.png");
 }
 
-#results {
+#wikipedia {
+    position: absolute;
+    left: 0;
+    top: 125px;
+    width: 100%;
+    height: 150px;
+    background-color: #88a5bc;
+    border-top: 1px solid #98b6ce;
+    border-bottom: 1px solid #98b6ce;
+    outline: 1px solid #5889b0;
+}
+
+#wikipedia-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -171px;
+    width: 342px;
+    height: 142px;
+    top: 20px;
+    background-image: url("pics/wikipedia-logo.png");
+    background-repeat: no-repeat;
+}
+
+#wikipedia-result {
     position: relative;
-    top: 75px;
+    left: 5%;
+    width: 90%;
+}
+
+#twitter {
+    position: absolute;
+    left: 0;
+    top: 325px;
+    width: 100%;
+    height: 150px;
+    background-color: #88a5bc;
+    border-top: 1px solid #98b6ce;
+    border-bottom: 1px solid #98b6ce;
+    outline: 1px solid #5889b0;
+}
+
+#twitter-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -146px;
+    width: 292px;
+    height: 54px;
+    top: 45px;
+    background-image: url("pics/twitter-logo.png");
+    background-repeat: no-repeat;
+}
+
+#twitter-result {
+    position: relative;
+    left: 5%;
+    width: 90%;
 }

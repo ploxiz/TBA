@@ -1,10 +1,11 @@
+/* (c) 2014 https://github.com/ploxiz/TBD */
 $(document).ready(function() {
 
     var keyWord = null;
 
     // click the submit button in case of pressing the ENTER key.
     $("#keyword").keypress(function(e){
-        if(e.keyCode==13)
+        if(e.keyCode == 13)
             $("#submit-button").click();
     });
 
@@ -27,14 +28,9 @@ $(document).ready(function() {
                     var readData = $("<div>" + data.parse.text["*"] + "</div>");
                     var paragraph = readData.find("p:first");
 
-                    $("#wikipedia-content").html(paragraph);
+                    $("#wikipedia-result").html(paragraph);
             })
         }
-    };
-
-    var reddit = {
-        name: "Reddit",
-        address: "http://reddit.com/"
     };
 
     var twitter = {
