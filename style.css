@@ -1,6 +1,6 @@
 /* (c) 2014 https://github.com/ploxiz/TBD */
 body {
-    background-color: #7398b7;
+    background-color: #aec9e1;
 }
 
 #search-bar-background {
@@ -16,7 +16,7 @@ body {
 #logo {
     position: absolute;
     left: -50px;
-    color: #7398b7;
+    color: #aec9e1;
     font-size: 85px;
     font-family: Tahoma, Arial, serif;
 }
@@ -72,9 +72,9 @@ body {
     top: 125px;
     width: 100%;
     height: 150px;
-    background-color: #88a5bc;
-    border-top: 1px solid #98b6ce;
-    border-bottom: 1px solid #98b6ce;
+    background-color: #88b1d4;
+    border-top: 1px solid #aec9e1;
+    border-bottom: 1px solid #aec9e1;
     outline: 1px solid #5889b0;
 }
 
@@ -101,9 +101,9 @@ body {
     top: 325px;
     width: 100%;
     height: 150px;
-    background-color: #88a5bc;
-    border-top: 1px solid #98b6ce;
-    border-bottom: 1px solid #98b6ce;
+    background-color: #88b1d4;
+    border-top: 1px solid #aec9e1;
+    border-bottom: 1px solid #aec9e1;
     outline: 1px solid #5889b0;
 }
 
