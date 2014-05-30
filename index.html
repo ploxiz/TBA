@@ -3,30 +3,33 @@
 <html>
     <head>
         <title>TBA</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="core.js"></script>
     </head>
 
     <body>
-        <h1>TBA</h1>
-        <label for="key">Type the word you are looking for:<br /></label>
-        <input type="text" id="key">
-        <input type="button" id="submit" value="Submit"><br />
+        <div id="search-bar">
+            <h1>TBA</h1>
+            <label for="keyword"></label>
+            <input type="text" id="keyword">
+            <input type="button" id="submit-button" value="Submit">
+        </div>
 
         <div class="results">
             <div id="wikipedia">
                 <h3>Wikipedia</h3>
-                <p id="wiki_content"></p>
+                <p id="wikipedia-content"></p>
+            </div>
+
+            <div id="reddit">
+                <h3>Reddit</h3>
+                <p id="reddit-content"></p>
             </div>
 
             <div id="twitter">
                 <h3>Twitter</h3>
-                <p id="twitter_content"></p>
-            </div>
-
-            <div id="facebook">
-                <h3>Facebook</h3>
-                <p id="facebook_content"></p>
+                <p id="twitter-content"></p>
             </div>
         </div>
     </body>

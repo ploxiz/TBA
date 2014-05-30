@@ -1,0 +1,24 @@
+body {
+    background-color: #b7c0c7;
+}
+
+#search-bar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -500px;
+    right: 0;
+    background-image: url("pics/search_bar.png");
+    height: 76px;
+    width: 1000px;
+}
+
+#keyword {
+    position: relative;
+    left: 272px;
+    top: -65px;
+    width: 381px;
+    height: 40px;
+    background: transparent;
+    border: transparent;
+}
