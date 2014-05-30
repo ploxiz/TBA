@@ -2,7 +2,14 @@ $(document).ready(function() {
 
     var keyWord = null;
 
-    $("#submit-button").click(function() { // basically the 'main' function.
+    // click the submit button in case of pressing the ENTER key.
+    $("#keyword").keypress(function(e){
+        if(e.keyCode==13)
+            $("#submit-button").click();
+    });
+
+    // basically the main() function.
+    $("#submit-button").click(function() {
         keyWord = $("#keyword").val();
         wikipedia.callWikipediaAPI(keyWord.replace(" ", "_"));
     });
@@ -17,7 +24,6 @@ $(document).ready(function() {
                     prop:"text",
                     redirects: false
                 }).done(function(data) {
-
                     var readData = $("<div>" + data.parse.text["*"] + "</div>");
                     var paragraph = readData.find("p:first");
 

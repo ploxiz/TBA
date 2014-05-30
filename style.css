@@ -2,13 +2,31 @@ body {
     background-color: #b7c0c7;
 }
 
+#search-bar-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("pics/search-bar-background.png");
+    background-repeat: repeat;
+    height: 76px;
+    width: 100%;
+}
+
+#logo {
+    position: absolute;
+    left: -50px;
+    color: #b7c0c7;
+    font-size: 85px;
+    font-family: Tahoma, Arial;
+}
+
 #search-bar {
     position: absolute;
     top: 0;
     left: 50%;
     margin-left: -500px;
     right: 0;
-    background-image: url("pics/search_bar.png");
+    background-image: url("pics/search-bar.png");
     height: 76px;
     width: 1000px;
 }
@@ -16,9 +34,38 @@ body {
 #keyword {
     position: relative;
     left: 272px;
-    top: -65px;
-    width: 381px;
+    top: 5px;
+    width: 360px;
     height: 40px;
+    font-size: 30px;
+    color: #376585;
+    padding-left: 25px;
     background: transparent;
     border: transparent;
+    outline: none;
+}
+
+#submit-button {
+    position: relative;
+    left: 269px;
+    top: 15px;
+    width: 54px;
+    height: 46px;
+    cursor: pointer;
+    background: transparent;
+    border: transparent;
+    outline: none;
+}
+
+#submit-button:hover {
+     background-image: url("pics/submit-button-hover.png");
+}
+
+#submit-button:active {
+    background-image: url("pics/submit-button-active.png");
+}
+
+#results {
+    position: relative;
+    top: 75px;
 }
