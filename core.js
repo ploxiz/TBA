@@ -51,7 +51,9 @@ $(document).ready(function() {
                 },
                 data: "grant_type=client_credentials",
                 success: function(data, textStatus) {
+
                     // TODO:
+
                 }
             });
         }
