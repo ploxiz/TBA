@@ -1,6 +1,6 @@
 /* (c) 2014 https://github.com/ploxiz/TBD */
 body {
-    background-color: #b7c0c7;
+    background-color: #7398b7;
 }
 
 #search-bar-background {
@@ -16,7 +16,7 @@ body {
 #logo {
     position: absolute;
     left: -50px;
-    color: #b7c0c7;
+    color: #7398b7;
     font-size: 85px;
     font-family: Tahoma, Arial, serif;
 }
@@ -39,7 +39,7 @@ body {
     width: 360px;
     height: 40px;
     font-size: 30px;
-    color: #376585;
+    color: #005aa6;
     padding-left: 25px;
     background: transparent;
     border: transparent;
