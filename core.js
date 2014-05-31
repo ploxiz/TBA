@@ -4,14 +4,14 @@ $(document).ready(function() {
     var keyWord = null;
 
     // click the submit button in case of pressing the ENTER key.
-    $("#keyword").keypress(function(e) {
+    $("#keyword-input").keypress(function(e) {
         if(e.keyCode == 13)
             $("#submit-button").click();
     });
 
     // basically the main() function.
     $("#submit-button").click(function() {
-        keyWord = $("#keyword").val();
+        keyWord = $("#keyword-input").val();
         wikipedia.callWikipediaAPI(keyWord.replace(" ", "_"));
         twitter.callTwitterAPI();
     });
@@ -51,9 +51,7 @@ $(document).ready(function() {
                 },
                 data: "grant_type=client_credentials",
                 success: function(data, textStatus) {
-
                     // TODO:
-
                 }
             });
         }

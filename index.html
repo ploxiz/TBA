@@ -4,29 +4,51 @@
     <head>
         <title>TBD</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <style type="text/css">
+            @-moz-document url-prefix() {
+
+            }
+        </style>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="core.js"></script>
     </head>
 
     <body>
-        <div id="search-bar-background">
-            <div id="search-bar">
-                <span id="logo">TBD</span>
-                <input type="text" id="keyword" autofocus="autofocus">
+        <div id="top">
+            <div id="logo"></div>
+            <div id="loader"></div>
+            <div id="separator1"></div>
+            <div id="about-button">ABOUT</div>
+            <div id="separator2"></div>
+            <div id="support-button">SUPPORT</div>
+            <div id="separator3"></div>
+            <div id="twitter-button"><img id="twitter-icon" src="pics/twitter-icon.png"></div>
+            <div id="separator4"></div>
+            <div id="facebook-button"><img id="facebook-icon" src="pics/facebook-icon.png"></div>
+        </div>
+
+        <div id="search-box-background">
+            <div id="search-box">
+                <div id="text1">START SURFING THE WEB. <span style="font-size: 75px;">EFFICIENTLY</span></div>
+                <div id="text2">WE HELP YOU GET THE INFORMATION YOU WANT FROM THE MOST POPULAR SOURCES ON THE INTERNET</div>
+                <input type="text" id="keyword-input" autofocus="autofocus">
                 <input type="button" id="submit-button">
             </div>
         </div>
 
-        <h4 style="margin-top: 100px; color: #01325a; font-family: Tahoma, Arial, serif">Wikipedia</h4>
         <div id="wikipedia">
             <div id="wikipedia-logo"></div>
             <p id="wikipedia-result"></p>
         </div>
 
-        <h4 style="margin-top: 180px; color: #01325a; font-family: Tahoma, Arial, serif">Twitter</h4>
         <div id="twitter">
             <div id="twitter-logo"></div>
             <p id="twitter-result"></p>
         </div>
+
+        <!--<div id="footer">
+            <span id="copyright">All rights reserved. (c) TBD 2014</span>
+        </div>-->
+
     </body>
 </html>
