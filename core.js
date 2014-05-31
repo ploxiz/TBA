@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     // click the submit button in case of pressing the ENTER key.
     $("#keyword-input").keypress(function(e) {
-        if(e.keyCode == 13)
+        if (e.keyCode == 13)
             $("#submit-button").click();
     });
 
