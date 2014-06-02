@@ -12,6 +12,7 @@ $(document).ready(function() {
     // basically the main() function.
     $("#submit-button").click(function() {
         keyWord = $("#keyword-input").val();
+        $("#wikipedia")
         wikipedia.callWikipediaAPI(keyWord.replace(" ", "_"));
         twitter.callTwitterAPI();
     });
@@ -39,8 +40,8 @@ $(document).ready(function() {
         address: "http://twitter.com/",
 
         callTwitterAPI : function () {
-            var base64BearerTokenCredentials = "SGloTUxpelFxMTRNcVhOajJaWExoazJ1TDpxQVE3V2V6UDF1ZWtiamFBQXo1c2hUUFhU" +
-                "VHNUZnJvdnhZU2lyM0xtbzdwSDY1dkR4Nw==";
+            var base64BearerTokenCredentials = "SGloTUxpelFxMTRNcVhOajJaWExoazJ1TDpxQVE3V2V6UDF1ZWtiamFBQXo1c2hUUFhUV" +
+                "HNUZnJvdnhZU2lyM0xtbzdwSDY1dkR4Nw==";
 
             $.ajax({
                 type: "POST",
