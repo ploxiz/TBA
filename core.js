@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     var keyWord = null;
 
-    // click the submit button in case of pressing the ENTER key.
+    // associates pressing the ENTER key with clicking the submit-button
     $("#keyword-input").keypress(function(e) {
         if (e.keyCode == 13)
             $("#submit-button").click();
@@ -12,7 +12,6 @@ $(document).ready(function() {
     // basically the main() function.
     $("#submit-button").click(function() {
         keyWord = $("#keyword-input").val();
-        $("#wikipedia")
         wikipedia.callWikipediaAPI(keyWord.replace(" ", "_"));
         twitter.callTwitterAPI();
     });
