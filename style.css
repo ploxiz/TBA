@@ -1,0 +1,314 @@
+body {
+    background-color: #ffffff;
+}
+
+#top {
+    width: 100%;
+    height: 85px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+}
+
+#logo {
+    width: 138px;
+    height: 49px;
+    position: relative;
+    top: 13px;
+    left: 15%;
+    background-image: url("pics/logo.png");
+    cursor: pointer;
+}
+
+#separator1 {
+    width: 1px;
+    height: 85px;
+    position: absolute;
+    right: 357px;
+    top: 0;
+    background-image: url("pics/separator.png");
+}
+
+#about-button {
+    position: absolute;
+    color: #33a1b0;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 271px;
+    padding-top: 35px;
+    padding-bottom: 31px;
+    padding-right: 16px;
+    padding-left: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#about-button:hover {
+    background-color: #6cbdc8;
+    color: #ffffff;
+}
+
+#separator2 {
+    width: 1px;
+    height: 85px;
+    position: absolute;
+    right: 270px;
+    top: 0;
+    background-image: url("pics/separator.png");
+}
+
+#support-button {
+    position: absolute;
+    color: #33a1b0;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 178px;
+    padding-top: 35px;
+    padding-bottom: 31px;
+    padding-right: 8px;
+    padding-left: 8px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#support-button:hover {
+    background-color: #6cbdc8;
+    color: #ffffff;
+}
+
+#separator3 {
+    width: 1px;
+    height: 85px;
+    position: absolute;
+    right: 177px;
+    top: 0;
+    background-image: url("pics/separator.png");
+}
+
+#twitter-button {
+    width: 34px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    right: 89px;
+    padding-top: 29px;
+    padding-bottom: 28px;
+    padding-right: 27px;
+    padding-left: 27px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#twitter-button:hover {
+    background-color: #6cbdc8;
+}
+
+#separator4 {
+    width: 1px;
+    height: 85px;
+    position: absolute;
+    right: 88px;
+    top: 0;
+    background-image: url("pics/separator.png");
+}
+
+#facebook-button {
+    width: 34px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    padding-top: 26px;
+    padding-bottom: 31px;
+    padding-right: 15px;
+    padding-left: 39px;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#facebook-button:hover {
+    background-color: #6cbdc8;
+}
+
+/* ISSUE #6 */
+#search-box-background {
+    width: 99.2%; /* small update to ISSUE #6, but NOT fix */
+    height: 268px;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    background-image: url("pics/search-box-background.png");
+}
+
+#search-box {
+    width: 1360px;
+    height: 268px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -680px;
+    background-image: url("pics/search-box.png");
+}
+
+#text1 {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    color: #ffffff;
+    text-align: center;
+    top: 15px;
+    cursor: default;
+}
+
+#text2 {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    top: 15px;
+    cursor: default;
+}
+
+#keyword-input {
+    position: relative;
+    top: 54px;
+    left: 445px;
+    width: 375px;
+    height: 44px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #bf493a;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    padding-top: 3px;
+}
+
+#submit-button {
+    position: relative;
+    width: 94px;
+    height: 45px;
+    top: 63px;
+    left: 426px;
+    background-image: url("pics/search-button.png");
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+#submit-button:hover {
+    background-image: url("pics/search-button-hover.png");
+}
+
+#submit-button:active {
+    background-image: url("pics/search-button-active.png");
+}
+
+#wikipedia {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 440px;
+    width: 100%;
+    height: 170px;
+    background-color: #efeeee;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    outline: 1px solid #b5b5b5;
+}
+
+#wikipedia-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -171px;
+    width: 342px;
+    height: 142px;
+    top: 35px;
+    background-image: url("pics/wikipedia-logo.png");
+    background-repeat: no-repeat;
+}
+
+#wikipedia-result {
+    position: relative;
+    left: 5%;
+    width: 90%;
+}
+
+#twitter {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 700px;
+    width: 100%;
+    height: 170px;
+    background-color: #efeeee;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    outline: 1px solid #b5b5b5;
+    margin-bottom: 75px;
+}
+
+#twitter-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -146px;
+    width: 292px;
+    height: 54px;
+    top: 59px   ;
+    background-image: url("pics/twitter-logo.png");
+    background-repeat: no-repeat;
+}
+
+#twitter-result {
+    position: relative;
+    left: 5%;
+    width: 90%;
+}
+
+/*
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 59px;
+    background-image: url("pics/footer-background.png");
+    text-align: center;
+}
+
+#copyright {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    top: 23px;
+
+}
+*/
+
+/* Firefox support */
+@-moz-document url-prefix() {
+    #keyword-input {
+        top: 62px;
+    }
+
+    #submit-button {
+        top: 55px;
+        left: 425px;;
+    }
+}

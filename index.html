@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- (c) 2014 https://github.com/ploxiz/TBD -->
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>TBD</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--[if IE]>
+        <style>
+            #about-button {
+                padding-bottom: 32px;
+            }
+
+            #support-button {
+                padding-bottom: 32px;
+            }
+
+            #keyword-input {
+                top: 67px;
+            }
+
+            #submit-button {
+                top: 60px;
+            }
+        </style>
+        <![endif]-->
+        <script src="libs/jquery-1.11.1.min.js"></script>
+        <script src="core.js"></script>
+    </head>
+
+    <body>
+        <div id="top">
+            <div id="logo" onclick="location.href='#';"></div>
+            <div id="loader"></div>
+            <div id="separator1"></div>
+            <div id="about-button" onclick="location.href='#';">ABOUT</div>
+            <div id="separator2"></div>
+            <div id="support-button" onclick="location.href='#';">SUPPORT</div>
+            <div id="separator3"></div>
+            <div id="twitter-button" onclick="window.open('http://twitter.com');">
+                <img id="twitter-icon" src="pics/twitter-icon.png">
+            </div>
+            <div id="separator4"></div>
+            <div id="facebook-button" onclick="window.open('http://facebook.com');">
+                <img id="facebook-icon" src="pics/facebook-icon.png">
+            </div>
+        </div>
+
+        <div id="search-box-background">
+            <div id="search-box">
+                <div id="text1">
+                    START SURFING THE WEB. <span style="font-size: 75px;">EFFICIENTLY</span>
+                </div>
+                <div id="text2">
+                    WE HELP YOU GET THE INFORMATION YOU WANT FROM THE MOST POPULAR SOURCES ON THE INTERNET
+                </div>
+                <input type="text" id="keyword-input" autofocus="autofocus">
+                <input type="button" id="submit-button">
+            </div>
+        </div>
+
+        <div id="wikipedia">
+            <div id="wikipedia-logo"></div>
+            <p id="wikipedia-result"></p>
+        </div>
+
+        <div id="twitter">
+            <div id="twitter-logo"></div>
+            <p id="twitter-result"></p>
+        </div>
+
+        <!--<div id="footer">
+            <span id="copyright">All rights reserved. (c) TBD 2014</span>
+        </div>-->
+    </body>
+</html>
