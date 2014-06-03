@@ -1,5 +1,11 @@
 body {
     background-color: #ffffff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #top {
@@ -118,7 +124,7 @@ body {
     height: 28px;
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 0;
     padding-top: 26px;
     padding-bottom: 31px;
     padding-right: 15px;
@@ -222,7 +228,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    top: 440px;
+    top: 430px;
     width: 100%;
     height: 170px;
     background-color: #efeeee;
@@ -246,13 +252,19 @@ body {
     position: relative;
     left: 5%;
     width: 90%;
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }
 
 #twitter {
     position: absolute;
     left: 0;
     right: 0;
-    top: 700px;
+    top: 685px;
     width: 100%;
     height: 170px;
     background-color: #efeeee;
@@ -268,7 +280,7 @@ body {
     margin-left: -146px;
     width: 292px;
     height: 54px;
-    top: 59px   ;
+    top: 59px;
     background-image: url("pics/twitter-logo.png");
     background-repeat: no-repeat;
 }
@@ -277,11 +289,17 @@ body {
     position: relative;
     left: 5%;
     width: 90%;
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }
 
-/*
 #footer {
     position: absolute;
+    top: 940px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -297,9 +315,9 @@ body {
     font-size: 12px;
     color: #ffffff;
     top: 23px;
+    cursor: default;
 
 }
-*/
 
 /* Firefox support */
 @-moz-document url-prefix() {
