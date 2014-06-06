@@ -141,23 +141,23 @@ body {
     background-color: #6cbdc8;
 }
 
-/* ISSUE #6 */
 #search-box-background {
-    width: 99.2%; /* small update to ISSUE #6, but NOT fix */
+    width: 100%;
     height: 268px;
     position: absolute;
     top: 85px;
     left: 0;
+    right: 0;
     background-image: url("pics/search-box-background.png");
 }
 
 #search-box {
-    width: 1360px;
+    width: 960px;
     height: 268px;
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -680px;
+    margin-left: -480px;
     background-image: url("pics/search-box.png");
 }
 
@@ -170,6 +170,7 @@ body {
     text-align: center;
     top: 15px;
     cursor: default;
+    z-index: 1;
 }
 
 #text2 {
@@ -181,14 +182,15 @@ body {
     text-align: center;
     top: 15px;
     cursor: default;
+    z-index: 1;
 }
 
 #keyword-input {
     position: relative;
-    top: 54px;
-    left: 445px;
-    width: 375px;
-    height: 44px;
+    top: 164px;
+    left: 246px;
+    width: 360px;
+    height: 41px;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: #bf493a;
@@ -203,8 +205,8 @@ body {
     position: relative;
     width: 94px;
     height: 45px;
-    top: 63px;
-    left: 426px;
+    top: 175px;
+    left: 226px;
     background-image: url("pics/search-button.png");
     border: none;
     outline: none;
@@ -235,6 +237,8 @@ body {
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
     outline: 1px solid #b5b5b5;
+    overflow-y: scroll; /* TODO: add scrolling style */
+    overflow-x: hidden;
 }
 
 #wikipedia-logo {
