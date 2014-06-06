@@ -1,7 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <!-- (c) 2014 https://github.com/ploxiz/TBD -->
-<html>
     <head>
         <meta charset="utf-8"/>
         <title>TBD</title>
@@ -27,7 +27,7 @@
         </style>
         <![endif]-->
         <script src="libs/jquery-1.11.1.min.js"></script>
-        <script type="text/javascript" src="core.js"></script>
+        <!--<script type="text/javascript" src="core.js"></script>-->
     </head>
 
     <body>
@@ -49,15 +49,17 @@
         </div>
 
         <div id="search-box-background">
+            <div id="text1">
+                START SURFING THE WEB. <span style="font-size: 75px;">EFFICIENTLY</span>
+            </div>
+            <div id="text2">
+                WE HELP YOU GET THE INFORMATION YOU WANT FROM THE MOST POPULAR SOURCES ON THE INTERNET
+            </div>
             <div id="search-box">
-                <div id="text1">
-                    START SURFING THE WEB. <span style="font-size: 75px;">EFFICIENTLY</span>
-                </div>
-                <div id="text2">
-                    WE HELP YOU GET THE INFORMATION YOU WANT FROM THE MOST POPULAR SOURCES ON THE INTERNET
-                </div>
-                <input type="text" id="keyword-input" autofocus="autofocus">
-                <input type="button" id="submit-button">
+                <form name="input" action="search" method="get">
+                    <input type="text" name="keyword" id="keyword-input" autofocus="autofocus">
+                    <input type="submit" id="submit-button" value="">
+                </form>
             </div>
         </div>
 
