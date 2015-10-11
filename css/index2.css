@@ -1,0 +1,127 @@
+body {
+    background: url("../pics/background.png") repeat;
+	font-family: 'Trebuchet MS', 'Arial', 'Helvetica', sans-serif;
+	color: #1d1d1d;
+}
+
+#top-container {
+	position: absolute;
+	top: 11px;
+	left: 0;
+	right: 0;
+	height: 75%;
+	background: url("../pics/city-background.png") no-repeat;
+}
+
+#logo {
+	position: absolute;
+	top: 5%;
+	margin-left: 7%;
+}
+
+#navbar {
+	position: absolute;
+	right: 7%;
+	top: 10%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+	color: #1d1d1d;
+	font-weight: bold;
+	font-size: 17px;
+	padding-left: 30px;
+	padding-right: 30px;
+	-webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+a:hover {
+	color: #e44655;
+}
+
+#facebook {
+	color: #3b5998;
+}
+
+#twitter {
+	color: #55acee;
+}
+
+.headline {
+	text-align: center;
+	font-weight: bold;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.headline.first {
+	margin-top: 10%;
+	font-size: 65px;
+}
+
+span {
+	font-size: 90px;
+}
+
+.headline.second {
+	font-size: 19px;
+}
+
+form {
+	position: relative;
+	top: 19%;
+	text-align: center;
+}
+
+.search-input {
+  	width: 557px;
+  	height: 53px;
+  	background-color: transparent;
+    border: 3px solid #e44655;
+    border-radius: 7px;
+  	outline: none;
+  	font-size: 40px;
+  	color: #e44655;
+  	padding-left: 10px;
+}
+
+.submit-button {
+	position: relative;
+	bottom: 9px;
+	left: 10px;
+	background: #e44655;
+	border-radius: 7px;
+	color: #f4f4f4;
+	width: 150px;
+	height: 57px;
+	border: 0;
+	outline: 0;
+	font-size: 20px;
+	cursor: pointer;
+	-moz-box-shadow: 0 4px 0 0 #c42f3e;
+	-webkit-box-shadow: 0 4px 0 0 #c42f3e;
+	-o-box-shadow: 0 4px 0 0 #c42f3e;
+	-webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+
+.submit-button:focus {
+	bottom: 6px;
+	-moz-box-shadow: 0 2px 0 0 #c42f3e;
+	-webkit-box-shadow: 0 2px 0 0 #c42f3e;
+	-o-box-shadow: 0 2px 0 0 #c42f3e;
+}
